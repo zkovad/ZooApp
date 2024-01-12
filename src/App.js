@@ -8,14 +8,22 @@ function App() {
   return (
     <Router>
       <div>
+        <nav style={styles.nav}>
+          <ul>
+            <li>
+              <Link to="/tickets">Tickets</Link>
+            </li>
+            <li>
+              <Link to="/parking">Parking</Link>
+            </li>
+          </ul>
+          <hr />
+        </nav>
 
-
-        
         <Routes>
           <Route exact path="/tickets" element={<Tickets/>} />
           <Route path="/parking" element={<Parking/>} />
         </Routes>
-        
       </div>
     </Router>
   );
@@ -23,12 +31,12 @@ function App() {
 
 const styles = {
   nav: {
-    visibility: 'collapse'
+    display: 'none'
   },  
 
   '@media only screen and (max-width: 600px)': {
     nav: {
-      visibility: 'visible'
+      display: 'block'
     }
   }
 }
