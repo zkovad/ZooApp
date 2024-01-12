@@ -8,18 +8,9 @@ function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/tickets">Tickets</Link>
-            </li>
-            <li>
-              <Link to="/parking">Parking</Link>
-            </li>
-          </ul>
-        </nav>
 
-        <hr />
+
+        
         <Routes>
           <Route exact path="/tickets" element={<Tickets/>} />
           <Route path="/parking" element={<Parking/>} />
@@ -28,6 +19,18 @@ function App() {
       </div>
     </Router>
   );
+}
+
+const styles = {
+  nav: {
+    visibility: 'collapse'
+  },  
+
+  '@media only screen and (max-width: 600px)': {
+    nav: {
+      visibility: 'visible'
+    }
+  }
 }
 
 export default App;

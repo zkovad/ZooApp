@@ -1,0 +1,91 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+.picture, .info {
+    width: 50%;
+    margin: 0 auto; 
+    text-align: center; 
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .parking-image {
+    width: 100%;
+    max-width: 100%; 
+    height: auto; 
+    height: 100%; 
+    object-fit: cover; 
+  }
+
+  .parking-info {
+    padding: 2lvh
+  }
+
+  .left-half {
+    float: left;
+  }
+
+  .right-half {
+    float: right
+  }
+
+  .select {
+    margin-top: 10lvh;
+    height: 8lvh;
+    width: 64lvh;
+  }
+
+  .green-circle {
+    width: 25px;
+    height: 25px;
+    background-color: green;
+    border-radius: 50%;
+    border: 2px solid black;
+    float: left;
+  }
+
+  .red-circle {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px solid black;
+    float: left;
+  }
+
+  .circles {
+    margin-top: 10lvh;
+    margin-left: 35lvh;
+  }
+
+  .p {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 25px;
+  }
+
+  .right-space {
+    margin-left: 5lvh;
+    float: left;
+  }
+
+  .button-class {
+    margin-top: 35lvh;
+  }
+
+  .button {
+    height: 5lvh;
+    width: 40lvh;
+    background-color: white;
+  }
+
+  h1 {
+    margin-left: -40vh;
+    text-shadow: 2px 2px 4px white;
+    color: black;
+    
+  }
