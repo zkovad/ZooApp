@@ -3,12 +3,21 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import Tickets from './Tickets';
 import Parking from './Parking';
+import styled from 'styled-components';
+
+const Nav = styled.nav`
+  display: none;
+
+  @media only screen and (max-width: 600px) {
+    display: block;
+  }
+`;
 
 function App() {
   return (
     <Router>
       <div>
-        <nav style={styles.nav}>
+        <Nav>
           <ul>
             <li>
               <Link to="/tickets">Tickets</Link>
@@ -17,8 +26,7 @@ function App() {
               <Link to="/parking">Parking</Link>
             </li>
           </ul>
-          <hr />
-        </nav>
+        </Nav>
 
         <Routes>
           <Route exact path="/tickets" element={<Tickets/>} />
@@ -27,18 +35,6 @@ function App() {
       </div>
     </Router>
   );
-}
-
-const styles = {
-  nav: {
-    display: 'none'
-  },  
-
-  '@media only screen and (max-width: 600px)': {
-    nav: {
-      display: 'block'
-    }
-  }
 }
 
 export default App;
