@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
-import Tickets from './Tickets';
-import Parking from './Parking';
+import Tickets from './components/Tickets';
+import Parking from './components/Parking';
 import styled from 'styled-components';
 
 const Nav = styled.nav`
