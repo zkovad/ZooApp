@@ -25,11 +25,11 @@ const MobileParking = () => {
         </div>
         <div className='navigation'>
             <footer>
-                    <Link to="/tickets">
+                    <Link to="/parking">
                         <img src={ParkingIcon} alt='Parking Icon' className='pictureIconSize'/>
                     </Link>
 
-                    <Link to="/parking">
+                    <Link to="/tickets">
                         <img src={TicketIcon} alt='Ticket Icon' className='pictureIconSize'/>
                     </Link>
             </footer>

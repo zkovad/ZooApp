@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Tickets from './components/Tickets';
 import Parking from './components/Parking';
@@ -26,13 +26,17 @@ function App() {
   return (
     <Router>
       <div>
-        <Nav>
-          <MobileParking/>
-        </Nav>
-
         <Routes>
-          <Route exact path="/tickets" element={<Tickets/>} />
-          <Route path="/parking" element={<ParkingView><Parking/></ParkingView>} />
+          <Route path="/tickets" element={<Tickets/>} />
+          <Route path="/parking" element={
+            <>
+            <Nav>
+              <MobileParking />
+            </Nav>
+            <ParkingView><Parking/></ParkingView>
+            </>
+            }
+          />
         </Routes>
       </div>
     </Router>
