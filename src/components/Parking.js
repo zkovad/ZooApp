@@ -1,6 +1,6 @@
 import React from 'react';
-import Parkinglot from './Parkinglot.jpg'
-import './Parking.css';
+import Parkinglot from '../assets/images/Parkinglot.jpg'
+import '../assets/css/Parking.css';
 import { Link } from 'react-router-dom';
 
 
