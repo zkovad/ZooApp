@@ -59,7 +59,9 @@ const TicketForm = () => {
 
   return (
     <div className="ticketsite">
+      <h2>Ticket kaufen:</h2>
       <label>Datum des Besuches:</label>
+      <br></br>
       <input
         className="date"
         type="date"
@@ -80,15 +82,17 @@ const TicketForm = () => {
         <span>{formFields.childrenCount}</span>
         <button className="button" onClick={() => handleInputChange('childrenCount', formFields.childrenCount + 1)}>+</button>
         <br></br>
+        <br></br>
       </div>
       <label>Preis:</label>
-      <input
+      <input className="price"
         type="number"
         value={formFields.price}
         onChange={(e) => handleInputChange('price', e.target.value)}
       />
       <br></br>
       <button className="buttonnavigation" onClick={handleSubmit}>Kaufen</button>
+      <button className="buttonnavigation" onClick={() => navigate('/parking')}>Zurück zu Parking</button>
     </div>
   );
 };
