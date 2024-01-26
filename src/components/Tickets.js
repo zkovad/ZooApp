@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { v4 as uuidv4 } from 'uuid'; // Import the uuid library
+import { v4 as uuidv4 } from 'uuid';
 import '../assets/css/Tickets.css';
 
 const TicketForm = () => {
@@ -23,7 +23,7 @@ const TicketForm = () => {
     
     const newTicket = {
       ...formFields,
-      id: uuidv4(), // Generate a unique ID
+      id: uuidv4(),
     };
 
     try {
@@ -57,6 +57,7 @@ const TicketForm = () => {
     console.log('Ticket submitted:', newTicket);
   };
 
+  
   return (
     <div className="ticketsite">
       <h2>Ticket kaufen:</h2>
